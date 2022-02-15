@@ -9,7 +9,8 @@ body{
         rgb(92, 45, 32),
         hsla(231, 46%, 17%, 1)
     );
-
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: var(--ff-poppins);
 }
 h1, h4, p, ul, li{
@@ -433,6 +434,11 @@ footer > h4{
     color: var(--clr-half-white);
     text-align: center;
     margin-bottom: 2rem;
+}
+@media (max-width: 420px){
+    body{
+        width: 150vw;
+    }
 }
 @media (max-width:699px){
     .search-field, .icon{
